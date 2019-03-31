@@ -1,0 +1,4 @@
+VOC/data_voc/
+VOC/checkpoints
+VOC/logs
+bagfcn/data_bagfcn

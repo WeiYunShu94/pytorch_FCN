@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36b0c313-1aec-4aa1-9182-7c683c962221" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VOC/download_dataset.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VOC/readme_voc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VOC/train_fcn32s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/models_bagfcn/FCN_bag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/models_bagfcn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/models_bagfcn/fcn16s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/models_bagfcn/fcn32s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/models_bagfcn/fcn8s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/models_bagfcn/vgg16.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/readme_bag.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/test_bagfcn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/trian_bagfcn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/utils_bagfcn/BagData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/utils_bagfcn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bagfcn/utils_bagfcn/utils_bagfcn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_fcn32s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/datasets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/datasets/voc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/nyud/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/nyud/classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/nyud/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/nyud/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/nyud/val.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/pascal-context/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/pascal-context/classes-400.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/pascal-context/classes-59.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/pascal/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/pascal/classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/pascal/seg11valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/sift-flow/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/sift-flow/classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/sift-flow/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/sift-flow/trainval.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/ilsvrc-nets/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/infer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-d/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-d/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-d/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-d/test.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-d/trainval.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-hha/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-hha/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-hha/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-hha/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-hha/test.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color-hha/trainval.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color/test.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-color/trainval.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-hha/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-hha/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-hha/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-hha/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-hha/test.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud-fcn32s-hha/trainval.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/nyud_layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn16s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn16s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn16s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn16s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn16s/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn16s/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn32s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn32s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn32s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn32s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn32s/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn32s/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn8s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn8s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn8s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn8s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn8s/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext-fcn8s/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/pascalcontext_layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/score.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn16s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn16s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn16s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn16s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn16s/test.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn16s/trainval.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn32s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn32s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn32s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn32s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn32s/test.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn32s/trainval.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn8s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn8s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn8s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn8s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn8s/test.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow-fcn8s/trainval.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/siftflow_layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/surgery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn-alexnet/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn-alexnet/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn-alexnet/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn-alexnet/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn-alexnet/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn-alexnet/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn16s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn16s/deploy.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn16s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn16s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn16s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn16s/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn16s/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn32s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn32s/deploy.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn32s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn32s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn32s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn32s/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn32s/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s-atonce/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s-atonce/deploy.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s-atonce/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s-atonce/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s-atonce/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s-atonce/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s-atonce/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s/caffemodel-url" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s/deploy.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s/net.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s/solve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s/solver.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s/train.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc-fcn8s/val.prototxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/voc_layers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/models/fcn16s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/models/fcn32s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/models/fcn8s.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/models/vgg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/trainer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/torchfcn/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="train_fcn32s.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VOC/train_fcn32s.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+              <folding>
+                <element signature="e#23#38#0" expanded="true" />
+                <element signature="e#255#422#0" />
+                <element signature="e#468#1186#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme_bag.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bagfcn/readme_bag.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-38">
+                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_bagfcn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bagfcn/test_bagfcn.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="trian_bagfcn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bagfcn/trian_bagfcn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/torchfcn/trainer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#361#1038#0" />
+                <element signature="e#1944#2305#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/torchfcn/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+              <folding>
+                <element signature="e#356#1152#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/fcn/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#399#660#0" />
+                <element signature="e#663#742#0" />
+                <element signature="e#867#903#0" />
+                <element signature="e#946#1087#0" />
+                <element signature="e#1121#1664#0" />
+                <element signature="e#1717#1886#0" />
+                <element signature="e#1929#2100#0" />
+                <element signature="e#2150#2878#0" />
+                <element signature="e#3107#3321#0" />
+                <element signature="e#3389#4041#0" />
+                <element signature="e#4274#4952#0" />
+                <element signature="e#5015#6047#0" />
+                <element signature="e#6133#7508#0" />
+                <element signature="e#7622#9686#0" />
+                <element signature="e#9731#11440#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme_voc.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VOC/readme_voc.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="209">
+                <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="download_dataset.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VOC/download_dataset.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>utils</find>
+      <find>batch_to_vars</find>
+      <find>DataLoader</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/fcn/__init__.py" />
+        <option value="$PROJECT_DIR$/torchfcn/models/fcn8s.py" />
+        <option value="$PROJECT_DIR$/test/test_fcn32s.py" />
+        <option value="$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/torch/nn/modules/conv.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/bag/readme_bag.md" />
+        <option value="$PROJECT_DIR$/bag/utils_bagfcn.py" />
+        <option value="$PROJECT_DIR$/bag/data_bag/BagData.py" />
+        <option value="$PROJECT_DIR$/bagfcn/data_bag/BagData.py" />
+        <option value="$PROJECT_DIR$/bagfcn/utils_bagfcn/utils_bagfcn.py" />
+        <option value="$PROJECT_DIR$/bagfcn/test_bagfcn.py" />
+        <option value="$PROJECT_DIR$/bagfcn/utils_bagfcn/BagData.py" />
+        <option value="$PROJECT_DIR$/VOC/train_fcn32s.py" />
+        <option value="$PROJECT_DIR$/torchfcn/trainer.py" />
+        <option value="$PROJECT_DIR$/bagfcn/trian_bagfcn.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/VOC/readme_voc.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-48" />
+    <option name="y" value="503" />
+    <option name="width" value="1413" />
+    <option name="height" value="952" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pytorch_FCN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pytorch_FCN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pytorch_FCN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pytorch_FCN" type="462c0819:PsiDirectoryNode" />
+              <item name="bagfcn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pytorch_FCN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pytorch_FCN" type="462c0819:PsiDirectoryNode" />
+              <item name="bagfcn" type="462c0819:PsiDirectoryNode" />
+              <item name="data_bagfcn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pytorch_FCN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pytorch_FCN" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pytorch_FCN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pytorch_FCN" type="462c0819:PsiDirectoryNode" />
+              <item name="VOC" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pytorch_FCN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pytorch-fcn-master" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bagfcn/utils_bagfcn" />
+      <recent name="$PROJECT_DIR$/bag/utils_bagfcn" />
+      <recent name="$PROJECT_DIR$/torchfcn" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/VOC" />
+      <recent name="$PROJECT_DIR$/bagfcn/models_bagfcn" />
+      <recent name="$PROJECT_DIR$/bag/utils_bagfcn" />
+      <recent name="$PROJECT_DIR$/bag/data_bag" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.train_fcn32s">
+    <configuration name="BagData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytorch_FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bagfcn/utils_bagfcn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bagfcn/utils_bagfcn/BagData.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test_fcn32s" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytorch_FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_fcn32s.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="train_fcn32s" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytorch_FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VOC" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VOC/train_fcn32s.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="trian_bagfcn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytorch_FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bagfcn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bagfcn/trian_bagfcn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="py.test for test_fcn32s.test_get_upsampling_weight" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pytorch_FCN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_fcn32s.test_get_upsampling_weight&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <list>
+      <item itemvalue="Python tests.py.test for test_fcn32s.test_get_upsampling_weight" />
+      <item itemvalue="Python.test_fcn32s" />
+      <item itemvalue="Python.trian_bagfcn" />
+      <item itemvalue="Python.BagData" />
+      <item itemvalue="Python.train_fcn32s" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train_fcn32s" />
+        <item itemvalue="Python.trian_bagfcn" />
+        <item itemvalue="Python.BagData" />
+        <item itemvalue="Python.test_fcn32s" />
+        <item itemvalue="Python tests.py.test for test_fcn32s.test_get_upsampling_weight" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36b0c313-1aec-4aa1-9182-7c683c962221" name="Default" comment="" />
+      <created>1554009613144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554009613144</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="py_test_for_test_fcn32s_test_get_upsampling_weight - 2019.03.31 at 14h 45m 23s.xml">
+      <configuration name="py.test for test_fcn32s.test_get_upsampling_weight" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21530055" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2918193" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30694142" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" weight="0.29284164" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44932845" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/fcn8s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/models/fcn32s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="143" column="67" lean-forward="true" selection-start-line="143" selection-start-column="67" selection-end-line="143" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#190#4800#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/torch/nn/modules/conv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#2371#7580#0" />
+            <element signature="e#14021#20301#0" />
+            <element signature="e#20344#21940#0" />
+            <element signature="e#20806#21940#0" />
+            <element signature="e#22000#27406#0" />
+            <element signature="e#26768#27130#0" />
+            <element signature="e#27188#27406#0" />
+            <element signature="e#27466#34512#0" />
+            <element signature="e#34572#41602#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/fcn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#16#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/models/fcn8s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#197#5963#0" />
+            <element signature="e#5997#10156#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/initializers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/datasets/transforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/645428453/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="2566" column="8" selection-start-line="2566" selection-start-column="8" selection-end-line="2566" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/models/fcn16s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#190#5242#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#136#310#0" />
+            <element signature="e#373#872#0" />
+            <element signature="e#921#1619#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/vgg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/utils_bagfcn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/models_bagfcn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#16#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/models_bagfcn/FCN_bag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_fcn32s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/utils_bagfcn/utils_bagfcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/utils_bagfcn/BagData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/torch/utils/data/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="715" column="32" selection-start-line="715" selection-start-column="32" selection-end-line="715" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/logs/20190331_161712.868090/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/logs/20190331_161813.185014/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/train_fcn8s.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/train_fcn8s_atonce.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/train_fcn16s.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/fcn/datasets/voc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/models/vgg16.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#156#2693#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/initializers/weight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="228">
+            <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/ext/fcn.berkeleyvision.org/data/nyud/val.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/tqdm-4.28.1-py3.6.egg/tqdm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/tqdm-4.28.1-py3.6.egg/tqdm/_tqdm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="1281" column="17" lean-forward="true" selection-start-line="1281" selection-start-column="17" selection-end-line="1281" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/logs/20190331_222251.423714/config.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/logs/20190331_222251.423714/log.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-646">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/datasets/voc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="88" column="15" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
+          <folding>
+            <element signature="e#226#612#0" />
+            <element signature="e#753#1541#0" />
+            <element signature="e#1652#2116#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/logs/20190331_222251.423714/visualization_viz/iter000000004000.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/logs/20190331_222251.423714/visualization_viz/iter000000000000.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/MaskRCNN/lib/python3.6/site-packages/fcn/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#399#660#0" />
+            <element signature="e#663#742#0" />
+            <element signature="e#867#903#0" />
+            <element signature="e#946#1087#0" />
+            <element signature="e#1121#1664#0" />
+            <element signature="e#1717#1886#0" />
+            <element signature="e#1929#2100#0" />
+            <element signature="e#2150#2878#0" />
+            <element signature="e#3107#3321#0" />
+            <element signature="e#3389#4041#0" />
+            <element signature="e#4274#4952#0" />
+            <element signature="e#5015#6047#0" />
+            <element signature="e#6133#7508#0" />
+            <element signature="e#7622#9686#0" />
+            <element signature="e#9731#11440#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding>
+            <element signature="e#356#1152#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/torchfcn/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="98" column="34" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#361#1038#0" />
+            <element signature="e#1944#2305#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/readme_bag.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-38">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/test_bagfcn.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagfcn/trian_bagfcn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="106" column="32" selection-start-line="106" selection-start-column="32" selection-end-line="106" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/train_fcn32s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+            <element signature="e#255#422#0" />
+            <element signature="e#468#1186#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/download_dataset.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VOC/readme_voc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="209">
+            <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
