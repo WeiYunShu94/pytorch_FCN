@@ -104,6 +104,7 @@ def main():
         batch_size=1, shuffle=False, **kwargs)
 
     # 2. model
+    args.resume = "/home/atr/WMJ/pytorch_FCN/VOC/logs/20190331_222251.423714/checkpoint.pth.tar"
     model = torchfcn.models.FCN32s(n_class=21)
     start_epoch = 0
     start_iteration = 0
@@ -132,6 +133,7 @@ def main():
         lr=args.lr,
         momentum=args.momentum,
         weight_decay=args.weight_decay)
+
     if args.resume:
         optim.load_state_dict(checkpoint['optim_state_dict'])
 
